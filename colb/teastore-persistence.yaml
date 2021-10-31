@@ -1,0 +1,109 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: teastore-persistence-chain-1
+spec:
+  selector:
+    matchLabels:
+      app: teastore-persistence
+      version: v1
+      chain: v1
+  template:
+    metadata:
+      labels:
+        app: teastore-persistence
+        version: v1
+        chain: v1
+    spec:
+      containers:
+        - name: teastore-persistence
+          image: descartesresearch/teastore-persistence
+          ports:
+            - containerPort: 8080
+          env:
+            - name: HOST_NAME
+              value: "teastore-persistence"
+            - name: REGISTRY_HOST
+              value: "teastore-registry"
+            - name: DB_HOST
+              value: "teastore-db"
+            - name: DB_PORT
+              value: "3306"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: teastore-persistence-chain-2
+spec:
+  selector:
+    matchLabels:
+      app: teastore-persistence
+      version: v2
+      chain: v2
+  template:
+    metadata:
+      labels:
+        app: teastore-persistence
+        version: v2
+        chain: v2
+    spec:
+      containers:
+        - name: teastore-persistence
+          image: descartesresearch/teastore-persistence
+          ports:
+            - containerPort: 8080
+          env:
+            - name: HOST_NAME
+              value: "teastore-persistence"
+            - name: REGISTRY_HOST
+              value: "teastore-registry"
+            - name: DB_HOST
+              value: "teastore-db"
+            - name: DB_PORT
+              value: "3306"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: teastore-persistence-chain-3
+spec:
+  selector:
+    matchLabels:
+      app: teastore-persistence
+      version: v3
+      chain: v3
+  template:
+    metadata:
+      labels:
+        app: teastore-persistence
+        version: v3
+        chain: v3
+    spec:
+      containers:
+        - name: teastore-persistence
+          image: descartesresearch/teastore-persistence
+          ports:
+            - containerPort: 8080
+          env:
+            - name: HOST_NAME
+              value: "teastore-persistence"
+            - name: REGISTRY_HOST
+              value: "teastore-registry"
+            - name: DB_HOST
+              value: "teastore-db"
+            - name: DB_PORT
+              value: "3306"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: teastore-persistence
+  labels:
+    app: teastore-persistence
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: teastore-persistence

@@ -1,0 +1,52 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: teastore-persistence
+spec:
+  hosts:
+    - teastore-persistence.teastore.svc.cluster.local
+  http:
+    - name: "from-img-chain-1"
+      match:
+        - sourceLabels:
+            app: teastore-image
+      route:
+        - destination:
+            host: teastore-persistence.teastore.svc.cluster.local
+            subset: v1
+    - name: "from-recommender-chain-2"
+      match:
+        - sourceLabels:
+            app: teastore-recommender
+      route:
+        - destination:
+            host: teastore-persistence.teastore.svc.cluster.local
+            subset: v2
+    - name: "from-webui-chain-3"
+      match:
+        - sourceLabels:
+            app: teastore-webui
+      route:
+        - destination:
+            host: teastore-persistence.teastore.svc.cluster.local
+            subset: v3
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: persistence-destination
+spec:
+  host: teastore-persistence.teastore.svc.cluster.local
+  subsets:
+    - name: chain-1
+      labels:
+        chain: v1
+        version: v1
+    - name: chain-2
+      labels:
+        version: v2
+        chain: v2
+    - name: chain-3
+      labels:
+        version: v3
+        chain: v3
