@@ -1,0 +1,62 @@
+2021-11-02 23:12:59,971 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-11-02 23:12:59,985 INFO o.a.j.JMeter: Loading user properties from: /root/bin/apache-jmeter-5.4.1/bin/user.properties
+2021-11-02 23:12:59,986 INFO o.a.j.JMeter: Loading system properties from: /root/bin/apache-jmeter-5.4.1/bin/system.properties
+2021-11-02 23:12:59,986 INFO o.a.j.JMeter: Setting JMeter property: hostname=192.168.0.98
+2021-11-02 23:12:59,986 INFO o.a.j.JMeter: Setting JMeter property: port=30080
+2021-11-02 23:12:59,986 INFO o.a.j.JMeter: Setting JMeter property: numUser=1
+2021-11-02 23:12:59,986 INFO o.a.j.JMeter: Setting JMeter property: ramaUp=1
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: Version 5.4.1
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: java.version=1.8.0_302
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: os.name=Linux
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: os.arch=amd64
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: os.version=4.18.0-240.22.1.el8_3.x86_64
+2021-11-02 23:12:59,995 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-11-02 23:12:59,996 INFO o.a.j.JMeter: java.awt.headless=true
+2021-11-02 23:12:59,996 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-11-02 23:12:59,996 INFO o.a.j.JMeter: Available Processors =8
+2021-11-02 23:13:00,002 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-11-02 23:13:00,002 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-11-02 23:13:00,003 INFO o.a.j.JMeter: JMeterHome=/root/bin/apache-jmeter-5.4.1
+2021-11-02 23:13:00,003 INFO o.a.j.JMeter: user.dir  =/root/github.com/DescartesResearch/TeaStore/examples/jmeter
+2021-11-02 23:13:00,003 INFO o.a.j.JMeter: PWD       =/root/github.com/DescartesResearch/TeaStore/examples/jmeter
+2021-11-02 23:13:00,003 INFO o.a.j.JMeter: IP: 192.168.0.93 Name: kube-master1 FullName: kube-master1
+2021-11-02 23:13:00,010 INFO o.a.j.s.FileServer: Default base='/root/github.com/DescartesResearch/TeaStore/examples/jmeter'
+2021-11-02 23:13:00,011 INFO o.a.j.s.FileServer: Set new base='/root/github.com/DescartesResearch/TeaStore/examples/jmeter'
+2021-11-02 23:13:00,160 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-11-02 23:13:00,178 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-11-02 23:13:00,183 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-11-02 23:13:00,190 INFO o.a.j.s.SaveService: Loading file: teastore_browse_nogui.jmx
+2021-11-02 23:13:00,244 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2021-11-02 23:13:00,256 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-11-02 23:13:00,256 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-11-02 23:13:00,256 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-11-02 23:13:00,256 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-11-02 23:13:00,256 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-11-02 23:13:00,256 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-11-02 23:13:00,292 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-11-02 23:13:00,298 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-11-02 23:13:00,298 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-11-02 23:13:00,299 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-11-02 23:13:00,304 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-11-02 23:13:00,304 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-11-02 23:13:00,653 INFO o.a.j.JMeter: Running test (1635865980653)
+2021-11-02 23:13:00,708 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread-Gruppe
+2021-11-02 23:13:00,709 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread-Gruppe.
+2021-11-02 23:13:00,709 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-11-02 23:13:00,709 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2021-11-02 23:13:00,719 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-11-02 23:13:00,719 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-11-02 23:13:00,722 INFO o.a.j.t.JMeterThread: Thread started: Thread-Gruppe 1-1
+2021-11-02 23:13:00,744 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = kube-master1
+2021-11-02 23:13:00,750 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-11-02 23:13:00,752 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-11-02 23:13:00,752 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-11-02 23:13:00,767 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-11-02 23:13:00,767 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-11-02 23:13:01,079 INFO o.a.j.r.Summariser: summary +      1 in 00:00:00 =    2.4/s Avg:   247 Min:   247 Max:   247 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2021-11-02 23:13:30,003 INFO o.a.j.r.Summariser: summary +    957 in 00:00:29 =   33.1/s Avg:    29 Min:     7 Max:   396 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2021-11-02 23:13:30,003 INFO o.a.j.r.Summariser: summary =    958 in 00:00:29 =   32.6/s Avg:    29 Min:     7 Max:   396 Err:     0 (0.00%)
+2021-11-02 23:13:50,501 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2021-11-02 23:13:50,502 INFO o.a.j.r.ResultCollector: Shutdown hook ended

@@ -221,10 +221,9 @@ metadata:
   labels:
     app: teastore-webui
 spec:
-  type: NodePort
   ports:
     - port: 8080
-      nodePort: 30080
+      targetPort: 8080
       protocol: TCP
       name: http
   selector:
