@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: teastore-persistence-chain-1
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: teastore-persistence
@@ -14,6 +15,8 @@ spec:
         app: teastore-persistence
         version: v1
         chain: v1
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-persistence
@@ -35,6 +38,7 @@ kind: Deployment
 metadata:
   name: teastore-persistence-chain-2
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: teastore-persistence
@@ -46,6 +50,8 @@ spec:
         app: teastore-persistence
         version: v2
         chain: v2
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-persistence
@@ -67,6 +73,7 @@ kind: Deployment
 metadata:
   name: teastore-persistence-chain-3
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: teastore-persistence
@@ -78,6 +85,8 @@ spec:
         app: teastore-persistence
         version: v3
         chain: v3
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-persistence

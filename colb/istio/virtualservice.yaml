@@ -38,15 +38,15 @@ metadata:
 spec:
   host: teastore-persistence.teastore.svc.cluster.local
   subsets:
-    - name: chain-1
+    - name: v1
       labels:
         chain: v1
         version: v1
-    - name: chain-2
+    - name: v2
       labels:
         version: v2
         chain: v2
-    - name: chain-3
+    - name: v3
       labels:
         version: v3
         chain: v3

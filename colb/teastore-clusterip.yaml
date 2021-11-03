@@ -10,6 +10,8 @@ spec:
     metadata:
       labels:
         app: teastore-db
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-db
@@ -43,6 +45,8 @@ spec:
     metadata:
       labels:
         app: teastore-registry
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-registry
@@ -76,6 +80,8 @@ spec:
     metadata:
       labels:
         app: teastore-auth
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-auth
@@ -114,6 +120,8 @@ spec:
     metadata:
       labels:
         app: teastore-image
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-image
@@ -152,6 +160,8 @@ spec:
     metadata:
       labels:
         app: teastore-recommender
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-recommender
@@ -190,6 +200,8 @@ spec:
     metadata:
       labels:
         app: teastore-webui
+      annotations:
+        sidecar.istio.io/extraStatTags: kubernetes_node_name,istio_version,mesh_id
     spec:
       containers:
         - name: teastore-webui
